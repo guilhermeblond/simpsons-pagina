@@ -1,0 +1,122 @@
+* {
+    margin: 0; /*ALTERA A MARGEM pelo lado de fora */
+    padding: 0; /* espaço de dentro p fora */
+    box-sizing: border-box; /* configura as caixas */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* /Muda a fonte e deixa com "rabinho"/ */
+    line-height: 1.6;  /* /a escala tem referencia na própria linha e vai multiplicando/ */
+    background-color: #f9f9f9; /* muda a cor do fundo*/
+}
+
+nav {
+    position: fixed; /* /deixa em posição fixa em relação aos outros/ */
+    top: 0;
+    width: 100%; /* /largura total considera td/ */
+    background-color: #3333338c;
+    padding: 20px 0;
+}
+nav ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #7766c6;
+}
+
+sction:not(#home) {
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#room {
+    /* background-color: #4a90e2; */
+    background-image: url(https://i.pinimg.com/originals/51/d1/c9/51d1c959140fe04c4e3813422ac7a727.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+    
+}
+
+.content .text{
+    max-width: 600px;
+    text-align: left;
+}
+
+.content.text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content.text p{
+    font-size: 1.1em;
+    color: #555;
+}
+#services{
+    background-color: #ffffff;
+}
+#bart-simpsom{
+    background-color: #eaeaea;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5F96pqgy67kI_Zs6rXWSprzqfykoW9CzXQ&s);
+
+}
+
+#lisa-simpson{
+    background-color: #ffffff;
+}
+
+.cta-button{
+    margin-top: 30px;
+    background-color: #7766c6;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px #00000075;
+    transition: background-color 1s ease, transform 1s ease;
+}
